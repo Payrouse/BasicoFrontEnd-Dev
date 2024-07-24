@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      p {
+        color: salmon;
+        font-size: 32px;
+      }
+      p::first-letter{
+        color: chocolate;
+      }
+      p::before{
+        content: "❤";
+      }
+      p::after{
+        content: "💥💢";
+      }
+      p:hover {
+        color: black;
+      }
+      div p:nth-child(2){
+        color: blue;
+      }
+      ::placeholder{
+        color:aqua;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <p>Hola</p>
+    <div>
+      <p>Platzi</p>
+      <p>Curso de HTML</p>
+      <p>Curso Basico</p>
+    </div>
+    <input type="text" placeholder="Nombre">
+  </body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*Selector combinadidos Descendientes  */
+      div p,
+      h3 {
+        color: gold;
+      }
+      /*Selector combinadidos Hijos directos  */
+      div > div {
+        background: LightGoldenrodYellow;
+        color: chocolate;
+      }
+      /*Selector combinadidos Adyacentes  */
+      div + section {
+        background: brown;
+      }
+      /*Selector combinadidos Hermanos  */
+      div ~ p{
+        color:blue
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div>
+        <h2>Hijo Directo</h2>
+        <p>
+          Intenta colocar un color de letra a todos las etiquetas p que son
+          hijos directos de la clase "container".
+        </p>
+      </div>
+      <h3>Descendientes</h3>
+      <p>
+        Selecciona todos los elementos del selector de la derecha que son hijos
+        del selector de la izquierda, independientemente de la profundidad.
+        Estos selectores están separados por un espacio.
+      </p>
+    </div>
+    <section>
+      <div>
+        <h4>Adyacentes</h4>
+        <p>
+          Intenta colocar un color de letra a todos las etiquetas p que están
+          adyacente a las etiquetas div
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
